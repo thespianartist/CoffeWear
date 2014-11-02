@@ -1,36 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.wearable.view.BoxInsetLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="#b2dfdb"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/beansback"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:deviceIds="wear_square">
+    android:layout_width="match_parent">
 
-    <TextView android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_square"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
 
-    <ImageView
-        android:src="@drawable/beans"
-        android:layout_marginTop="10dp"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/text"
-        android:layout_centerHorizontal="true" />
+        <android.support.wearable.view.CardFrame
+            android:alpha="0.8"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
-</RelativeLayout>
+                <ImageView
+                    android:id="@+id/listen_bean"
+                    android:src="@drawable/beanicon"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="right" />
+
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/tittle_welcome"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/footer_welcome"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </android.support.wearable.view.CardFrame>
+
+
+</android.support.wearable.view.BoxInsetLayout>

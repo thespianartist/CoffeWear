@@ -4,5 +4,8 @@
     <string name="app_name">Quiero Cáfe</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">¿Quiere un poco de Café?</string>
+    <string name="tittle_welcome">Bienvenido a CoffeWear</string>
+    <string name="footer_welcome">Toque el bean para ordenar</string>
+
 
 </resources>

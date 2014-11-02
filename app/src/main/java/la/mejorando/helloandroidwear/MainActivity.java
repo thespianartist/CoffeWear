@@ -1,19 +1,27 @@
 package la.mejorando.helloandroidwear;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.support.wearable.view.CardFragment;
 import android.support.wearable.view.WatchViewStub;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
 
-    private TextView mTextView;
+
     private static final int SPEECH_REQUEST_CODE = 0;
+    ImageView bean;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +32,17 @@ public class MainActivity extends Activity {
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                displaySpeechRecognizer();
-                mTextView = (TextView) stub.findViewById(R.id.text);
+                bean = (ImageView) findViewById(R.id.listen_bean);
+                bean.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        displaySpeechRecognizer();
+                    }
+                });
 
             }
         });
     }
-
-
 
     private void displaySpeechRecognizer() {
 
@@ -50,9 +61,11 @@ public class MainActivity extends Activity {
             String spokenText = results.get(0);
 
             Log.e("hola", spokenText);
+            Toast.makeText(getApplicationContext(),spokenText,Toast.LENGTH_SHORT).show();
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 
 
 }
