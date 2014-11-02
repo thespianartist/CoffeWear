@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">CoffeWearPhone</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Bievenido a CoffeWear!</string>
+    <string name="hello_world2">Pedir café nunca fue tan facíl, esta  aplicacion esta conectada a tu Android Wear
+    para estar atenta a cualquier petición de café (:</string>
     <string name="action_settings">Settings</string>
 
 </resources>
