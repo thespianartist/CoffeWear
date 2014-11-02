@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CoffeWear.iml" filepath="$PROJECT_DIR$/CoffeWear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HelloAndroidWear.iml" filepath="$PROJECT_DIR$/HelloAndroidWear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coffewearphone/coffewearphone.iml" filepath="$PROJECT_DIR$/coffewearphone/coffewearphone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coffewearwatch/coffewearwatch.iml" filepath="$PROJECT_DIR$/coffewearwatch/coffewearwatch.iml" />
     </modules>
   </component>
 </project>
